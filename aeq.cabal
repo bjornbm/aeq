@@ -1,0 +1,33 @@
+name:            aeq
+version:         0.1
+homepage:        http://github.com/patperry/hs-ieee754
+synopsis:        Utilities for dealing with IEEE floating point numbers
+description:
+    Approximate and exact equality comparisons for general types. Stolen
+    from ieee754 package by Patrick Perry.
+category:        Math
+license:         BSD3
+license-file:    LICENSE
+copyright:       (c) 2011. Patrick Perry <patperry@gmail.com>, 2014 Bjorn Buckwalter
+author:          Bjorn Buckwalter, Patrick Perry
+maintainer:      Bjorn Buckwalter <bjorn@buckwalter.se>
+cabal-version: >= 1.2.0
+build-type:      Simple
+tested-with:     GHC ==6.12.3
+
+extra-source-files: LICENSE.Tango NEWS cbits/feqrel_source.c
+                    tests/Makefile tests/Tests.hs
+
+flag big_endian
+  description: Build for a big endian machine.  Beware that only
+               little endian machines have been tested.
+  default:     False
+
+library
+    exposed-modules: Data.AEq
+                     Numeric.IEEE
+
+    extensions:      FlexibleInstances
+
+    build-depends:   base >= 3 && < 5
+    ghc-options:     -Wall
