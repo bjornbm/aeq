@@ -47,10 +47,9 @@ class (RealFloat a) => IEEE a where
     -- (equivalent to @feqrel@ from the Tango Math library).  The result is
     -- between @0@ and @'floatDigits'@.
     sameSignificandBits :: a -> a -> Int
-    sameSignificandBits x y | signum x == signum y && isInfinite x && isInfinite y = floatDigits x
+    sameSignificandBits x y | isInfinite x && isInfinite y && signum x == signum y = floatDigits x
                             | x == y = floatDigits x
                             | otherwise = max 0 (exponent x - exponent (x - y))
-
 
 -- | Return the maximum of two values; if one value is @NaN@, return the
 -- other.  Prefer the first if both values are @NaN@.
