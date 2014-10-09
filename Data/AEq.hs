@@ -11,6 +11,7 @@
 -- for common data types.
 module Data.AEq (
     AEq(..),
+    sameishSignificandBits,
     ) where
 
 import Foreign
@@ -50,10 +51,17 @@ class Eq a => AEq a where
     (~==) = (==)
     {-# INLINE (~==) #-}
 
+
+-- | Roughly the number of significand bits which are equal in the two
+-- arguments. The result is between @0@ and @'floatDigits'@.
+sameishSignificandBits :: RealFloat a => a -> a -> Int
+sameishSignificandBits x y | isInfinite x && isInfinite y && signum x == signum y = floatDigits x
+                           | x == y = floatDigits x
+                           | otherwise = max 0 (exponent (min x y) - exponent (x - y))
+
 approxEqIEEE :: (IEEE a) => a -> a -> Bool
 approxEqIEEE x y =
-    -- ( sameSignificandBits x y >= d
-    (exponent x - exponent (x - y) >= d
+    ( sameishSignificandBits x y >= d
     || (abs x < epsilon && abs y < epsilon)
     || (isNaN x && isNaN y)
     )

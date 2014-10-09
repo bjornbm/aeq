@@ -43,13 +43,6 @@ class (RealFloat a) => IEEE a where
     -- | Maximum @NaN@ payload for type @a@.
     maxNaNPayload :: a -> Word64
 
-    -- | The number of significand bits which are equal in the two arguments
-    -- (equivalent to @feqrel@ from the Tango Math library).  The result is
-    -- between @0@ and @'floatDigits'@.
-    sameSignificandBits :: a -> a -> Int
-    sameSignificandBits x y | isInfinite x && isInfinite y && signum x == signum y = floatDigits x
-                            | x == y = floatDigits x
-                            | otherwise = max 0 (exponent x - exponent (x - y))
 
 -- | Return the maximum of two values; if one value is @NaN@, return the
 -- other.  Prefer the first if both values are @NaN@.

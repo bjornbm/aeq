@@ -138,250 +138,250 @@ test_infinity_F2 = infinity > (0 :: F) @?= True
 
 
 
-test_sameSignificandBits = testGroup "sameSignificandBits" $
-    [ testCase "exact D1" test_sameSignificandBits_exact_D1
-    , testCase "exact D2" test_sameSignificandBits_exact_D2
-    , testCase "exact D3" test_sameSignificandBits_exact_D3
-    , testCase "exact D4" test_sameSignificandBits_exact_D4
-    , testCase "fewbits D1" test_sameSignificandBits_fewbits_D1
-    , testCase "fewbits D2" test_sameSignificandBits_fewbits_D2
-    , testCase "fewbits D3" test_sameSignificandBits_fewbits_D3
-    , testCase "fewbits D4" test_sameSignificandBits_fewbits_D4
-    , testCase "fewbits D5" test_sameSignificandBits_fewbits_D5
-    , testCase "fewbits D6" test_sameSignificandBits_fewbits_D6
-    , testCase "fewbits D7" test_sameSignificandBits_fewbits_D7
-    , testCase "close D1" test_sameSignificandBits_close_D1
-    , testCase "close D2" test_sameSignificandBits_close_D2
-    , testCase "close D3" test_sameSignificandBits_close_D3
-    , testCase "close D4" test_sameSignificandBits_close_D4
-    , testCase "close D5" test_sameSignificandBits_close_D5
-    , testCase "2factors D1" test_sameSignificandBits_2factors_D1
-    , testCase "2factors D2" test_sameSignificandBits_2factors_D2
-    , testCase "2factors D3" test_sameSignificandBits_2factors_D3
-    , testCase "2factors D4" test_sameSignificandBits_2factors_D4
-    , testCase "extreme D1" test_sameSignificandBits_extreme_D1
-    , testCase "extreme D2" test_sameSignificandBits_extreme_D2
-    , testCase "extreme D3" test_sameSignificandBits_extreme_D3
-    , testCase "extreme D4" test_sameSignificandBits_extreme_D4
-    , testCase "extreme D5" test_sameSignificandBits_extreme_D5
-    , testCase "extreme D6" test_sameSignificandBits_extreme_D6
-    , testCase "exact F1" test_sameSignificandBits_exact_F1
-    , testCase "exact F2" test_sameSignificandBits_exact_F2
-    , testCase "exact F3" test_sameSignificandBits_exact_F3
-    , testCase "exact F4" test_sameSignificandBits_exact_F4
-    , testCase "fewbits F1" test_sameSignificandBits_fewbits_F1
-    , testCase "fewbits F2" test_sameSignificandBits_fewbits_F2
-    , testCase "fewbits F3" test_sameSignificandBits_fewbits_F3
-    , testCase "fewbits F4" test_sameSignificandBits_fewbits_F4
-    , testCase "fewbits F5" test_sameSignificandBits_fewbits_F5
-    , testCase "fewbits F6" test_sameSignificandBits_fewbits_F6
-    , testCase "fewbits F7" test_sameSignificandBits_fewbits_F7
-    , testCase "close F1" test_sameSignificandBits_close_F1
-    , testCase "close F2" test_sameSignificandBits_close_F2
-    , testCase "close F3" test_sameSignificandBits_close_F3
-    , testCase "close F4" test_sameSignificandBits_close_F4
-    , testCase "close F5" test_sameSignificandBits_close_F5
-    , testCase "2factors F1" test_sameSignificandBits_2factors_F1
-    , testCase "2factors F2" test_sameSignificandBits_2factors_F2
-    , testCase "2factors F3" test_sameSignificandBits_2factors_F3
-    , testCase "2factors F4" test_sameSignificandBits_2factors_F4
-    , testCase "extreme F1" test_sameSignificandBits_extreme_F1
-    , testCase "extreme F2" test_sameSignificandBits_extreme_F2
-    , testCase "extreme F3" test_sameSignificandBits_extreme_F3
-    , testCase "extreme F4" test_sameSignificandBits_extreme_F4
-    , testCase "extreme F5" test_sameSignificandBits_extreme_F5
-    , testCase "extreme F6" test_sameSignificandBits_extreme_F6
+test_sameishSignificandBits = testGroup "sameishSignificandBits" $
+    [ testCase "exact D1" test_sameishSignificandBits_exact_D1
+    , testCase "exact D2" test_sameishSignificandBits_exact_D2
+    , testCase "exact D3" test_sameishSignificandBits_exact_D3
+    , testCase "exact D4" test_sameishSignificandBits_exact_D4
+    , testCase "fewbits D1" test_sameishSignificandBits_fewbits_D1
+    , testCase "fewbits D2" test_sameishSignificandBits_fewbits_D2
+    , testCase "fewbits D3" test_sameishSignificandBits_fewbits_D3
+    , testCase "fewbits D4" test_sameishSignificandBits_fewbits_D4
+    , testCase "fewbits D5" test_sameishSignificandBits_fewbits_D5
+    , testCase "fewbits D6" test_sameishSignificandBits_fewbits_D6
+    , testCase "fewbits D7" test_sameishSignificandBits_fewbits_D7
+    , testCase "close D1" test_sameishSignificandBits_close_D1
+    , testCase "close D2" test_sameishSignificandBits_close_D2
+    , testCase "close D3" test_sameishSignificandBits_close_D3
+    , testCase "close D4" test_sameishSignificandBits_close_D4
+    , testCase "close D5" test_sameishSignificandBits_close_D5
+    , testCase "2factors D1" test_sameishSignificandBits_2factors_D1
+    , testCase "2factors D2" test_sameishSignificandBits_2factors_D2
+    , testCase "2factors D3" test_sameishSignificandBits_2factors_D3
+    , testCase "2factors D4" test_sameishSignificandBits_2factors_D4
+    , testCase "extreme D1" test_sameishSignificandBits_extreme_D1
+    , testCase "extreme D2" test_sameishSignificandBits_extreme_D2
+    , testCase "extreme D3" test_sameishSignificandBits_extreme_D3
+    , testCase "extreme D4" test_sameishSignificandBits_extreme_D4
+    , testCase "extreme D5" test_sameishSignificandBits_extreme_D5
+    , testCase "extreme D6" test_sameishSignificandBits_extreme_D6
+    , testCase "exact F1" test_sameishSignificandBits_exact_F1
+    , testCase "exact F2" test_sameishSignificandBits_exact_F2
+    , testCase "exact F3" test_sameishSignificandBits_exact_F3
+    , testCase "exact F4" test_sameishSignificandBits_exact_F4
+    , testCase "fewbits F1" test_sameishSignificandBits_fewbits_F1
+    , testCase "fewbits F2" test_sameishSignificandBits_fewbits_F2
+    , testCase "fewbits F3" test_sameishSignificandBits_fewbits_F3
+    , testCase "fewbits F4" test_sameishSignificandBits_fewbits_F4
+    , testCase "fewbits F5" test_sameishSignificandBits_fewbits_F5
+    , testCase "fewbits F6" test_sameishSignificandBits_fewbits_F6
+    , testCase "fewbits F7" test_sameishSignificandBits_fewbits_F7
+    , testCase "close F1" test_sameishSignificandBits_close_F1
+    , testCase "close F2" test_sameishSignificandBits_close_F2
+    , testCase "close F3" test_sameishSignificandBits_close_F3
+    , testCase "close F4" test_sameishSignificandBits_close_F4
+    , testCase "close F5" test_sameishSignificandBits_close_F5
+    , testCase "2factors F1" test_sameishSignificandBits_2factors_F1
+    , testCase "2factors F2" test_sameishSignificandBits_2factors_F2
+    , testCase "2factors F3" test_sameishSignificandBits_2factors_F3
+    , testCase "2factors F4" test_sameishSignificandBits_2factors_F4
+    , testCase "extreme F1" test_sameishSignificandBits_extreme_F1
+    , testCase "extreme F2" test_sameishSignificandBits_extreme_F2
+    , testCase "extreme F3" test_sameishSignificandBits_extreme_F3
+    , testCase "extreme F4" test_sameishSignificandBits_extreme_F4
+    , testCase "extreme F5" test_sameishSignificandBits_extreme_F5
+    , testCase "extreme F6" test_sameishSignificandBits_extreme_F6
     ]
 
-test_sameSignificandBits_exact_D1 =
-    sameSignificandBits (maxFinite :: D) maxFinite
+test_sameishSignificandBits_exact_D1 =
+    sameishSignificandBits (maxFinite :: D) maxFinite
         @?= floatDigits (undefined :: D)
-test_sameSignificandBits_exact_D2 =
-    sameSignificandBits (0 :: D) 0
+test_sameishSignificandBits_exact_D2 =
+    sameishSignificandBits (0 :: D) 0
         @?= floatDigits (undefined :: D)
-test_sameSignificandBits_exact_D3 =
-    sameSignificandBits (7.1824 :: D) 7.1824
+test_sameishSignificandBits_exact_D3 =
+    sameishSignificandBits (7.1824 :: D) 7.1824
         @?= floatDigits (undefined :: D)
-test_sameSignificandBits_exact_D4 =
-    sameSignificandBits (infinity :: D) infinity
+test_sameishSignificandBits_exact_D4 =
+    sameishSignificandBits (infinity :: D) infinity
         @?= floatDigits (undefined :: D)
 
-test_sameSignificandBits_fewbits_D1 =
+test_sameishSignificandBits_fewbits_D1 =
     forM_ [ 0..mantDig-1 ] $ \i ->
-         sameSignificandBits (1 + 2^^i * epsilon) (1 :: D) @?= mantDig - i - 1
+         sameishSignificandBits (1 + 2^^i * epsilon) (1 :: D) @?= mantDig - i - 1
   where
     mantDig = floatDigits (undefined :: D)
 
-test_sameSignificandBits_fewbits_D2 =
+test_sameishSignificandBits_fewbits_D2 =
     forM_ [ 0..mantDig-3 ] $ \i ->
-         sameSignificandBits (1 - 2^^i * epsilon) (1 :: D) @?= mantDig - i - 1
+         sameishSignificandBits (1 - 2^^i * epsilon) (1 :: D) @?= mantDig - i - 1
   where
     mantDig = floatDigits (undefined :: D)
 
-test_sameSignificandBits_fewbits_D3 =
+test_sameishSignificandBits_fewbits_D3 =
     forM_ [ 0..mantDig-1 ] $ \i ->
-         sameSignificandBits (1 :: D) (1 + (2^^i - 1) * epsilon)
+         sameishSignificandBits (1 :: D) (1 + (2^^i - 1) * epsilon)
              @?= mantDig - i
   where
     mantDig = floatDigits (undefined :: D)
 
-test_sameSignificandBits_fewbits_D4 =
-    sameSignificandBits (1.5 + epsilon) (1.5 :: D)
+test_sameishSignificandBits_fewbits_D4 =
+    sameishSignificandBits (1.5 + epsilon) (1.5 :: D)
         @?= floatDigits (undefined :: D) - 1
 
-test_sameSignificandBits_fewbits_D5 =
-    sameSignificandBits (1.5 - epsilon) (1.5 :: D)
+test_sameishSignificandBits_fewbits_D5 =
+    sameishSignificandBits (1.5 - epsilon) (1.5 :: D)
         @?= floatDigits (undefined :: D) - 1
 
-test_sameSignificandBits_fewbits_D6 =
-    sameSignificandBits (1.5 - epsilon) (1.5 + epsilon :: D)
+test_sameishSignificandBits_fewbits_D6 =
+    sameishSignificandBits (1.5 - epsilon) (1.5 + epsilon :: D)
         @?= floatDigits (undefined :: D) - 2
 
-test_sameSignificandBits_fewbits_D7 =
-    sameSignificandBits (minNormal / 8) (minNormal / 17 :: D)
+test_sameishSignificandBits_fewbits_D7 =
+    sameishSignificandBits (minNormal / 8) (minNormal / 17 :: D)
         @?= 3
 
-test_sameSignificandBits_close_D1 =
-    sameSignificandBits (encodeFloat 0x1B0000 84) (encodeFloat 0x1B8000 84 :: D)
+test_sameishSignificandBits_close_D1 =
+    sameishSignificandBits (encodeFloat 0x1B0000 84) (encodeFloat 0x1B8000 84 :: D)
         @?= 5
 
-test_sameSignificandBits_close_D2 =
-    sameSignificandBits (encodeFloat 0x180000 10) (encodeFloat 0x1C0000 10 :: D)
+test_sameishSignificandBits_close_D2 =
+    sameishSignificandBits (encodeFloat 0x180000 10) (encodeFloat 0x1C0000 10 :: D)
         @?= 2
 
-test_sameSignificandBits_close_D3 =
-    sameSignificandBits (1.5 * (1 - epsilon)) (1 :: D) @?= 2
+test_sameishSignificandBits_close_D3 =
+    sameishSignificandBits (1.5 * (1 - epsilon)) (1 :: D) @?= 2
 
-test_sameSignificandBits_close_D4 =
-    sameSignificandBits 1.5 (1 :: D) @?= 1
+test_sameishSignificandBits_close_D4 =
+    sameishSignificandBits 1.5 (1 :: D) @?= 1
 
-test_sameSignificandBits_close_D5 =
-    sameSignificandBits (2 * (1 - epsilon)) (1 :: D) @?= 1
+test_sameishSignificandBits_close_D5 =
+    sameishSignificandBits (2 * (1 - epsilon)) (1 :: D) @?= 1
 
-test_sameSignificandBits_2factors_D1 =
-    sameSignificandBits maxFinite (infinity :: D) @?= 0
+test_sameishSignificandBits_2factors_D1 =
+    sameishSignificandBits maxFinite (infinity :: D) @?= 0
 
-test_sameSignificandBits_2factors_D2 =
-    sameSignificandBits (2 * (1 - epsilon)) (1 :: D) @?= 1
+test_sameishSignificandBits_2factors_D2 =
+    sameishSignificandBits (2 * (1 - epsilon)) (1 :: D) @?= 1
 
-test_sameSignificandBits_2factors_D3 =
-    sameSignificandBits 1 (2 :: D) @?= 0
+test_sameishSignificandBits_2factors_D3 =
+    sameishSignificandBits 1 (2 :: D) @?= 0
 
-test_sameSignificandBits_2factors_D4 =
-    sameSignificandBits 4 (1 :: D) @?= 0
+test_sameishSignificandBits_2factors_D4 =
+    sameishSignificandBits 4 (1 :: D) @?= 0
 
-test_sameSignificandBits_extreme_D1 =
-    sameSignificandBits nan (nan :: D) @?= 0
+test_sameishSignificandBits_extreme_D1 =
+    sameishSignificandBits nan (nan :: D) @?= 0
 
-test_sameSignificandBits_extreme_D2 =
-    sameSignificandBits 0 (-nan :: D) @?= 0
+test_sameishSignificandBits_extreme_D2 =
+    sameishSignificandBits 0 (-nan :: D) @?= 0
 
-test_sameSignificandBits_extreme_D3 =
-    sameSignificandBits nan (infinity :: D) @?= 0
+test_sameishSignificandBits_extreme_D3 =
+    sameishSignificandBits nan (infinity :: D) @?= 0
 
-test_sameSignificandBits_extreme_D4 =
-    sameSignificandBits infinity (-infinity :: D) @?= 0
+test_sameishSignificandBits_extreme_D4 =
+    sameishSignificandBits infinity (-infinity :: D) @?= 0
 
-test_sameSignificandBits_extreme_D5 =
-    sameSignificandBits (-maxFinite) (infinity :: D) @?= 0
+test_sameishSignificandBits_extreme_D5 =
+    sameishSignificandBits (-maxFinite) (infinity :: D) @?= 0
 
-test_sameSignificandBits_extreme_D6 =
-    sameSignificandBits (maxFinite) (-maxFinite :: D) @?= 0
+test_sameishSignificandBits_extreme_D6 =
+    sameishSignificandBits (maxFinite) (-maxFinite :: D) @?= 0
 
-test_sameSignificandBits_exact_F1 =
-    sameSignificandBits (maxFinite :: F) maxFinite
+test_sameishSignificandBits_exact_F1 =
+    sameishSignificandBits (maxFinite :: F) maxFinite
         @?= floatDigits (undefined :: F)
-test_sameSignificandBits_exact_F2 =
-    sameSignificandBits (0 :: F) 0
+test_sameishSignificandBits_exact_F2 =
+    sameishSignificandBits (0 :: F) 0
         @?= floatDigits (undefined :: F)
-test_sameSignificandBits_exact_F3 =
-    sameSignificandBits (7.1824 :: F) 7.1824
+test_sameishSignificandBits_exact_F3 =
+    sameishSignificandBits (7.1824 :: F) 7.1824
         @?= floatDigits (undefined :: F)
-test_sameSignificandBits_exact_F4 =
-    sameSignificandBits (infinity :: F) infinity
+test_sameishSignificandBits_exact_F4 =
+    sameishSignificandBits (infinity :: F) infinity
         @?= floatDigits (undefined :: F)
 
-test_sameSignificandBits_fewbits_F1 =
+test_sameishSignificandBits_fewbits_F1 =
     forM_ [ 0..mantFig-1 ] $ \i ->
-         sameSignificandBits (1 + 2^^i * epsilon) (1 :: F) @?= mantFig - i - 1
+         sameishSignificandBits (1 + 2^^i * epsilon) (1 :: F) @?= mantFig - i - 1
   where
     mantFig = floatDigits (undefined :: F)
 
-test_sameSignificandBits_fewbits_F2 =
+test_sameishSignificandBits_fewbits_F2 =
     forM_ [ 0..mantFig-3 ] $ \i ->
-         sameSignificandBits (1 - 2^^i * epsilon) (1 :: F) @?= mantFig - i - 1
+         sameishSignificandBits (1 - 2^^i * epsilon) (1 :: F) @?= mantFig - i - 1
   where
     mantFig = floatDigits (undefined :: F)
 
-test_sameSignificandBits_fewbits_F3 =
+test_sameishSignificandBits_fewbits_F3 =
     forM_ [ 0..mantFig-1 ] $ \i ->
-         sameSignificandBits (1 :: F) (1 + (2^^i - 1) * epsilon)
+         sameishSignificandBits (1 :: F) (1 + (2^^i - 1) * epsilon)
              @?= mantFig - i
   where
     mantFig = floatDigits (undefined :: F)
 
-test_sameSignificandBits_fewbits_F4 =
-    sameSignificandBits (1.5 + epsilon) (1.5 :: F)
+test_sameishSignificandBits_fewbits_F4 =
+    sameishSignificandBits (1.5 + epsilon) (1.5 :: F)
         @?= floatDigits (undefined :: F) - 1
 
-test_sameSignificandBits_fewbits_F5 =
-    sameSignificandBits (1.5 - epsilon) (1.5 :: F)
+test_sameishSignificandBits_fewbits_F5 =
+    sameishSignificandBits (1.5 - epsilon) (1.5 :: F)
         @?= floatDigits (undefined :: F) - 1
 
-test_sameSignificandBits_fewbits_F6 =
-    sameSignificandBits (1.5 - epsilon) (1.5 + epsilon :: F)
+test_sameishSignificandBits_fewbits_F6 =
+    sameishSignificandBits (1.5 - epsilon) (1.5 + epsilon :: F)
         @?= floatDigits (undefined :: F) - 2
 
-test_sameSignificandBits_fewbits_F7 =
-    sameSignificandBits (minNormal / 8) (minNormal / 17 :: F)
+test_sameishSignificandBits_fewbits_F7 =
+    sameishSignificandBits (minNormal / 8) (minNormal / 17 :: F)
         @?= 3
 
-test_sameSignificandBits_close_F1 =
-    sameSignificandBits (encodeFloat 0x1B0000 84) (encodeFloat 0x1B8000 84 :: F)
+test_sameishSignificandBits_close_F1 =
+    sameishSignificandBits (encodeFloat 0x1B0000 84) (encodeFloat 0x1B8000 84 :: F)
         @?= 5
 
-test_sameSignificandBits_close_F2 =
-    sameSignificandBits (encodeFloat 0x180000 10) (encodeFloat 0x1C0000 10 :: F)
+test_sameishSignificandBits_close_F2 =
+    sameishSignificandBits (encodeFloat 0x180000 10) (encodeFloat 0x1C0000 10 :: F)
         @?= 2
 
-test_sameSignificandBits_close_F3 =
-    sameSignificandBits (1.5 * (1 - epsilon)) (1 :: F) @?= 2
+test_sameishSignificandBits_close_F3 =
+    sameishSignificandBits (1.5 * (1 - epsilon)) (1 :: F) @?= 2
 
-test_sameSignificandBits_close_F4 =
-    sameSignificandBits 1.5 (1 :: F) @?= 1
+test_sameishSignificandBits_close_F4 =
+    sameishSignificandBits 1.5 (1 :: F) @?= 1
 
-test_sameSignificandBits_close_F5 =
-    sameSignificandBits (2 * (1 - epsilon)) (1 :: F) @?= 1
+test_sameishSignificandBits_close_F5 =
+    sameishSignificandBits (2 * (1 - epsilon)) (1 :: F) @?= 1
 
-test_sameSignificandBits_2factors_F1 =
-    sameSignificandBits maxFinite (infinity :: F) @?= 0
+test_sameishSignificandBits_2factors_F1 =
+    sameishSignificandBits maxFinite (infinity :: F) @?= 0
 
-test_sameSignificandBits_2factors_F2 =
-    sameSignificandBits (2 * (1 - epsilon)) (1 :: F) @?= 1
+test_sameishSignificandBits_2factors_F2 =
+    sameishSignificandBits (2 * (1 - epsilon)) (1 :: F) @?= 1
 
-test_sameSignificandBits_2factors_F3 =
-    sameSignificandBits 1 (2 :: F) @?= 0
+test_sameishSignificandBits_2factors_F3 =
+    sameishSignificandBits 1 (2 :: F) @?= 0
 
-test_sameSignificandBits_2factors_F4 =
-    sameSignificandBits 4 (1 :: F) @?= 0
+test_sameishSignificandBits_2factors_F4 =
+    sameishSignificandBits 4 (1 :: F) @?= 0
 
-test_sameSignificandBits_extreme_F1 =
-    sameSignificandBits nan (nan :: F) @?= 0
+test_sameishSignificandBits_extreme_F1 =
+    sameishSignificandBits nan (nan :: F) @?= 0
 
-test_sameSignificandBits_extreme_F2 =
-    sameSignificandBits 0 (-nan :: F) @?= 0
+test_sameishSignificandBits_extreme_F2 =
+    sameishSignificandBits 0 (-nan :: F) @?= 0
 
-test_sameSignificandBits_extreme_F3 =
-    sameSignificandBits nan (infinity :: F) @?= 0
+test_sameishSignificandBits_extreme_F3 =
+    sameishSignificandBits nan (infinity :: F) @?= 0
 
-test_sameSignificandBits_extreme_F4 =
-    sameSignificandBits infinity (-infinity :: F) @?= 0
+test_sameishSignificandBits_extreme_F4 =
+    sameishSignificandBits infinity (-infinity :: F) @?= 0
 
-test_sameSignificandBits_extreme_F5 =
-    sameSignificandBits (-maxFinite) (infinity :: F) @?= 0
+test_sameishSignificandBits_extreme_F5 =
+    sameishSignificandBits (-maxFinite) (infinity :: F) @?= 0
 
-test_sameSignificandBits_extreme_F6 =
-    sameSignificandBits (maxFinite) (-maxFinite :: F) @?= 0
+test_sameishSignificandBits_extreme_F6 =
+    sameishSignificandBits (maxFinite) (-maxFinite :: F) @?= 0
 
 
 
@@ -389,7 +389,7 @@ test_sameSignificandBits_extreme_F6 =
 
 test_IEEE = testGroup "IEEE"
     [ test_infinity
-    , test_sameSignificandBits
+    , test_sameishSignificandBits
     , test_maxNum
     , test_minNum
     , test_maxNaN
