@@ -58,6 +58,7 @@ sameishSignificandBits :: RealFloat a => a -> a -> Int
 sameishSignificandBits x y | isInfinite x && isInfinite y && signum x == signum y = floatDigits x
                            | x == y = floatDigits x
                            | otherwise = max 0 (exponent (min x y) - exponent (x - y))
+                                                       -- ^^^^^^^ Minimizes test failures.
 
 approxEqIEEE :: (IEEE a) => a -> a -> Bool
 approxEqIEEE x y =
